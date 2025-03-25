@@ -522,10 +522,10 @@
             "id": "9b93778f-3da6-440f-93b8-bdefb6242af5",
             "actions": [
                 {
-                    "name": "Move",
-                    "type": "Value",
+                    "name": "Player1Move",
+                    "type": "Button",
                     "id": "ade71fdf-80ac-41ec-a3c8-69523f99a16b",
-                    "expectedControlType": "Axis",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -533,15 +533,87 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "ee039f4c-ee87-4922-a58a-a3a9802bb740",
-                    "path": "",
+                    "name": "1D Axis",
+                    "id": "9b621e11-a337-44b7-91ed-38282f7b9543",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
+                    "action": "Player1Move",
+                    "isComposite": true,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "c29cab57-1759-47fb-984c-a1a625c02cf6",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Player1Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "068dca1c-be11-4f78-990f-599c241766f7",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Player1Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "Player2",
+            "id": "8fccf70f-addf-4d3d-86d4-24ab1424844b",
+            "actions": [
+                {
+                    "name": "Player2Move",
+                    "type": "Button",
+                    "id": "6a6d43cf-6252-433a-86bb-2d3f489eaf4c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "1D Axis",
+                    "id": "5def5ff8-2742-4d38-923c-be02b57d1461",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Player2Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "021bcfa1-9e2d-4c3b-b0fe-1dd671f20d5f",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Player2Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "1c091920-319d-4403-b5f5-d834914a0073",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Player2Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }
